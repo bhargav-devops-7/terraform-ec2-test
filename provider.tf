@@ -7,8 +7,8 @@ terraform {
     }
 
     backend "s3" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
+    bucket = "remote.state.86s.mod"
+    key    = "ec2-module-test"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true 
