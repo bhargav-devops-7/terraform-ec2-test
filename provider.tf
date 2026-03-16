@@ -1,20 +1,20 @@
 terraform {
-    required_providers {
-        aws = { 
-            source = "hashicorp/aws" 
-            version = "6.36.0"
-        }
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "6.31.0"
     }
-
-    backend "s3" {
-    bucket = "remote.state.86s.mod"
-    key    = "ec2-module-test"
-    region = "us-east-1"
-    use_lockfile = true
-    encrypt = true 
   }
-} 
-    
+
+  backend "s3" {
+    bucket         = "remote.state.86s.mod"
+    key            = "roboshop-dev-vpc"
+    region         = "us-east-1"
+    use_lockfile   = true
+    encrypt        = true
+  }
+}
+
 provider "aws" {
-    region = "us-east-1"
+  region         = "us-east-1"
 }
