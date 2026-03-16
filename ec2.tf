@@ -5,9 +5,9 @@ module "example" {
     instance_type = var.instance_type
     sg_ids = var.sg_ids
     tags = var.tags
+}
 
-
-    output "pub_ip" {
+ output "pub_ip" {
         value = module.example.public_ip
     }
 
@@ -18,4 +18,3 @@ module "example" {
     output "inst_id" {
         value = module.example.instane_id
     }
-}
