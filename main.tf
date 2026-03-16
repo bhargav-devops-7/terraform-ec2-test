@@ -1,5 +1,5 @@
 module "example" {
-    source = "git::https://github.com/bhargav-devops-7/terraform-ec2-test.git?ref=main"
+    source = "git::https://github.com/bhargav-devops-7/terraform-aws-instance.git?ref=main"
 
     ami_id = data.aws_ami.joindevops.id
     instance_type = var.instance_type
