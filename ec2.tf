@@ -9,13 +9,13 @@ module "example" {
 }
 
  output "pub_ip" {
-        value = module.example.public_ip
-    }
+    value = module.example.public_ip
+}
 
-    output "priv_ip" {
-        value = module.example.private_ip
-    }
+output "priv_ip" {
+    value = module.example.private_ip
+}
 
-    output "inst_id" {
-        value = module.example.instane_id
-    }
+output "inst_id" {
+    value = module.example.instane_id
+}
